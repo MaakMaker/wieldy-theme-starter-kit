@@ -1,15 +1,21 @@
-import "styles/styles.min.css";
+import "styles/style.min.css";
 
-import Head from "next/head";
+import Router from "next/router";
+import NProgress from "nprogress";
+import { Provider } from "react-redux";
+
+import store from "app-redux";
+
+NProgress.configure({ showSpinner: false });
+Router.events.on("routeChangeStart", () => NProgress.start());
+Router.events.on("routeChangeComplete", () => NProgress.done());
+Router.events.on("routeChangeError", () => NProgress.done());
 
 function Page({ Component, pageProps }) {
   return (
-    <>
-      <Head>
-        <title>Wieldy- Admin Dashboard</title>
-      </Head>
+    <Provider store={store}>
       <Component {...pageProps} />
-    </>
+    </Provider>
   );
 }
 

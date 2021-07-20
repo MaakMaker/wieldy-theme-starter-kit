@@ -9,6 +9,7 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="/vendors/gaxon/styles.css" />
           <link rel="stylesheet" href="/vendors/flag/sprite-flags-24x24.css" />
           <link rel="stylesheet" href="/vendors/noir-pro/styles.css" />
+          <link rel="stylesheet" href="/vendors/nprogress.css" />
         </Head>
         <body>
           <Main />

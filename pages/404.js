@@ -9,20 +9,6 @@ function ErrorPage() {
         <h2 className="gx-text-center">
           Oops, an error has occurred. Page not found!
         </h2>
-        <form className="gx-mb-4" role="search">
-          <div className="gx-search-bar">
-            <div className="gx-form-group">
-              <input
-                type="search"
-                className="ant-input ant-input-lg"
-                placeholder="Search..."
-              />
-              <button className="gx-search-icon">
-                <i className="icon icon-search" />
-              </button>
-            </div>
-          </div>
-        </form>
         <p className="gx-text-center">
           <Link href="/">
             <a className="gx-btn gx-btn-primary">Go to Home</a>
