@@ -6,15 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "less": "lessc --js styles/wieldy.less styles/style.css && lessc --js styles/wieldy.less styles/style.min.css --compress -x"
   },
   "dependencies": {
+    "antd": "^4.16.8",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
     "eslint": "7.31.0",
-    "eslint-config-next": "11.0.1"
+    "eslint-config-next": "11.0.1",
+    "less": "^4.1.1"
   }
 }

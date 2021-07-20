@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import "styles/styles.min.css";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import Head from "next/head";
+
+function Page({ Component, pageProps }) {
+  return (
+    <>
+      <Head>
+        <title>Wieldy- Admin Dashboard</title>
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default Page;
